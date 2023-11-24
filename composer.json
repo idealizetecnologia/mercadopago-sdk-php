@@ -1,9 +1,8 @@
 {
-    "name": "mercadopago/dx-php",
+    "name": "climba-commerce/mercadopago-sdk-php",
     "description": "Mercado Pago PHP SDK",
     "type": "library",
     "license": "MIT",
-    "homepage": "https://github.com/mercadopago/sdk-php",
     "autoload": {
         "psr-4": {
             "MercadoPago\\": "src/MercadoPago"
