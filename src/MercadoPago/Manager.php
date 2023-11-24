@@ -1,5 +1,7 @@
 <?php
 namespace MercadoPago;
+use MercadoPago\Http\HttpMethod;
+
 /**
  * Class Manager
  *
@@ -434,8 +436,8 @@ class Manager
 
     private function shouldAddIdempotencyKey(string $method): bool
     {
-        $method = strtolower($method);
-        $methodShouldHaveIdempotencyKey = ["post", "put", "patch"];
+        $method = strtoupper($method);
+        $methodShouldHaveIdempotencyKey = [HttpMethod::POST, HttpMethod::PUT, HttpMethod::PATCH];
         return in_array($method, $methodShouldHaveIdempotencyKey);
     }
 
