@@ -3,7 +3,6 @@
   "description": "Mercado Pago PHP SDK",
   "type": "library",
   "license": "MIT",
-  "version": "2.6.1",
   "config": {
     "platform": {
         "php": "7.1"
